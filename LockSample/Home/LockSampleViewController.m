@@ -139,10 +139,9 @@
     for (int i = 0 ; i < 11; i++) {
         // 生成0~1秒的随机延迟时间
         NSTimeInterval randomDelay = drand48();
-        dispatch_after(randomDelay, queue, ^{
-            dispatch_async(queue, ^{
-                [self saleTicketWithLock:NO];
-            });
+        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(randomDelay * NSEC_PER_SEC));
+        dispatch_after(delayTime, queue, ^{
+            [self saleTicketWithLock:NO];
         });
     }
     
@@ -150,10 +149,9 @@
     for (int i = 0 ; i < 11; i++) {
         // 生成0~1秒的随机延迟时间
         NSTimeInterval randomDelay = drand48();
-        dispatch_after(randomDelay, queue2, ^{
-            dispatch_async(queue2, ^{
-                [self saleTicketWithLock:NO];
-            });
+        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(randomDelay * NSEC_PER_SEC));
+        dispatch_after(delayTime, queue2, ^{
+            [self saleTicketWithLock:NO];
         });
     }
 }
@@ -169,10 +167,9 @@
     for (int i = 0 ; i < 11; i++) {
         // 生成0~1秒的随机延迟时间
         NSTimeInterval randomDelay = drand48();
-        dispatch_after(randomDelay, queue, ^{
-            dispatch_async(queue, ^{
-                [self saleTicketWithLock:YES];
-            });
+        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(randomDelay * NSEC_PER_SEC));
+        dispatch_after(delayTime, queue, ^{
+            [self saleTicketWithLock:YES];
         });
     }
     
@@ -180,10 +177,9 @@
     for (int i = 0 ; i < 11; i++) {
         // 生成0~1秒的随机延迟时间
         NSTimeInterval randomDelay = drand48();
-        dispatch_after(randomDelay, queue2, ^{
-            dispatch_async(queue2, ^{
-                [self saleTicketWithLock:YES];
-            });
+        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(randomDelay * NSEC_PER_SEC));
+        dispatch_after(delayTime, queue2, ^{
+            [self saleTicketWithLock:YES];
         });
     }
 }

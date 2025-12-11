@@ -1,0 +1,27 @@
+// 开发环境配置
+
+// 引入共享配置
+#include "Common.xcconfig"
+
+// 构建配置
+CONFIGURATION_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)-$(PLATFORM_NAME)
+
+// 调试设置
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+ENABLE_NS_ASSERTIONS = YES
+ENABLE_TESTABILITY = YES
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+GCC_OPTIMIZATION_LEVEL = 0
+
+// 预处理器宏定义
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEBUG=1 DEV_ENV=1
+
+// 开发环境特有的配置
+// 例如：API地址
+API_BASE_URL = @"https://dev-api.example.com"
+
+// 环境名称
+ENVIRONMENT_NAME = "开发环境 (Debug)"
+
+// 开发环境Bundle ID
+PRODUCT_BUNDLE_IDENTIFIER = com.example.lockSample.dev

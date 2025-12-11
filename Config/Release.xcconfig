@@ -1,0 +1,27 @@
+// 生产环境配置
+
+// 引入共享配置
+#include "Common.xcconfig"
+
+// 构建配置
+CONFIGURATION_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)-$(PLATFORM_NAME)
+
+// 优化设置
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+ENABLE_NS_ASSERTIONS = NO
+ENABLE_TESTABILITY = NO
+SWIFT_OPTIMIZATION_LEVEL = -O
+GCC_OPTIMIZATION_LEVEL = 3
+
+// 预处理器宏定义
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) NDEBUG=1 PROD_ENV=1
+
+// 生产环境特有的配置
+// 例如：API地址
+API_BASE_URL = @"https://api.example.com"
+
+// 环境名称
+ENVIRONMENT_NAME = "生产环境 (Release)"
+
+// Bundle ID
+PRODUCT_BUNDLE_IDENTIFIER = com.example.lockSample
