@@ -4,7 +4,9 @@
 //
 //  Created by wjw on 2025/12/11.
 //
-
+/**
+ 使用信号量，控制最大并发量
+ */
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "TabBarControllerManager.h"
 
 @interface SceneDelegate ()
 
@@ -15,9 +16,31 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`. 
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    // 获取UIWindowScene
+    if (@available(iOS 13.0, *)) {
+        if ([scene isKindOfClass:[UIWindowScene class]]) {
+            UIWindowScene *windowScene = (UIWindowScene *)scene;
+            
+            // 创建UIWindow并附加到windowScene
+            self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+            
+            // 使用TabBarControllerManager创建TabBarController
+            UITabBarController *tabBarController = [TabBarControllerManager createAndConfigureTabBarController];
+            
+            // 设置根视图控制器
+            self.window.rootViewController = tabBarController;
+            
+            // 使window可见
+            [self.window makeKeyAndVisible];
+        }
+    } else {
+        // Fallback on earlier versions
+        // 注意：iOS 13之前的版本不需要SceneDelegate，直接在AppDelegate中处理
+    }
 }
 
 
