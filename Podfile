@@ -4,6 +4,7 @@ platform :ios, '13.0'
 def core_pods
   pod 'MJRefresh', '= 3.7.9'
   pod 'Masonry', '~> 1.1.0'
+  pod 'AFNetworking', '=4.0.1'
   
 end
 

@@ -25,5 +25,8 @@ API_BASE_URL = @"https://test-api.example.com"
 // 环境名称
 ENVIRONMENT_NAME = "测试环境 (Test)"
 
+// 测试环境App显示名称
+APP_DISPLAY_NAME = LockSample-Test
+
 // 测试环境Bundle ID
 PRODUCT_BUNDLE_IDENTIFIER = com.example.lockSample.test

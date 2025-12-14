@@ -1,0 +1,100 @@
+//
+//  LockSample-Prefix.pch
+//  LockSample
+//
+//  Created by Auto Generated on 2023/10/10.
+//  Copyright © 2023 Your Company. All rights reserved.
+//
+
+#ifndef LockSample_Prefix_pch
+#define LockSample_Prefix_pch
+
+// 导入常用系统框架
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <os/log.h>
+#import <os/signpost.h>
+
+// 环境判断宏 - 与xcconfig中的定义保持一致
+#if DEV_ENV
+    #define IS_DEBUG YES
+    #define IS_TEST NO
+    #define IS_PRODUCTION NO
+    #define CURRENT_ENVIRONMENT @"Debug"
+#elif TEST_ENV
+    #define IS_DEBUG YES
+    #define IS_TEST YES
+    #define IS_PRODUCTION NO
+    #define CURRENT_ENVIRONMENT @"Test"
+#elif PROD_ENV
+    #define IS_DEBUG NO
+    #define IS_TEST NO
+    #define IS_PRODUCTION YES
+    #define CURRENT_ENVIRONMENT @"Release"
+#else
+    #define IS_DEBUG NO
+    #define IS_TEST NO
+    #define IS_PRODUCTION YES
+    #define CURRENT_ENVIRONMENT @"Unknown"
+#endif
+
+// 日志输出宏
+#ifdef DEBUG
+    #define DLog(fmt, ...) NSLog((@"[DEBUG] %s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+    #define ELog(fmt, ...) NSLog((@"[ERROR] %s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+    #define DLog(fmt, ...) 
+    #define ELog(fmt, ...) 
+#endif
+
+// 性能打点宏
+#if DEV_ENV || TEST_ENV
+ #define OS_SIGNPOST_ENABLED 1
+ #else
+ #define OS_SIGNPOST_ENABLED 0
+#endif
+
+#define SIGNPOST_BEGIN(log, name, format, ...) \
+    ({ \
+        os_signpost_id_t spid = OS_SIGNPOST_ENABLED ? os_signpost_id_generate(log) : 0; \
+        if (OS_SIGNPOST_ENABLED) { \
+            os_signpost_interval_begin(log, spid, name, format, ##__VA_ARGS__); \
+        } \
+        spid; \
+    }) 
+
+#define SIGNPOST_END(log, spid, name) \
+    do { \
+        if (OS_SIGNPOST_ENABLED && spid != 0) { \
+            os_signpost_interval_end(log, spid, name); \
+        } \
+    } while(0)
+
+// 设备尺寸相关宏
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SCALE [UIScreen mainScreen].scale
+#define STATUS_BAR_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define NAVIGATION_BAR_HEIGHT (44.0f)
+#define TAB_BAR_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height > 20.0f ? 83.0f : 49.0f)
+
+// 颜色相关宏
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define HEXColor(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0x00FF00) >> 8))/255.0 blue:((float)(hex & 0x0000FF))/255.0 alpha:1.0]
+#define HEXAColor(hex, a) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0x00FF00) >> 8))/255.0 blue:((float)(hex & 0x0000FF))/255.0 alpha:(a)]
+
+// 弱引用/强引用宏
+#define WeakSelf __weak typeof(self) weakSelf = self;
+#define StrongSelf __strong typeof(weakSelf) self = weakSelf;
+
+// 字符串/数组/字典空值判断
+#define IsStringEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO)
+#define IsArrayEmpty(array) ([array isKindOfClass:[NSNull class]] || array == nil || array.count < 1 ? YES : NO)
+#define IsDictionaryEmpty(dict) ([dict isKindOfClass:[NSNull class]] || dict == nil || dict.count < 1 ? YES : NO)
+
+// 本地化字符串
+#define LocalizedString(key) NSLocalizedString(key, nil)
+#define LocalizedStringWithComment(key, comment) NSLocalizedString(key, comment)
+
+#endif /* LockSample_Prefix_pch */

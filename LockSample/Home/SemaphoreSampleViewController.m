@@ -7,6 +7,8 @@
 
 #import "SemaphoreSampleViewController.h"
 #import "Masonry.h"
+#import "MaxThreadDowloadManager.h"
+
 
 @interface SemaphoreSampleViewController ()
 @property (nonatomic, strong) UIButton *button1;
@@ -36,7 +38,7 @@
 - (void)createButtons {
     // 按钮1
     self.button1 = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.button1 setTitle:@"信号量基础" forState:UIControlStateNormal];
+    [self.button1 setTitle:@"信号量限制并发线程数量" forState:UIControlStateNormal];
     [self.button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.button1.backgroundColor = [UIColor systemBlueColor];
     [self.button1.layer setCornerRadius:8.0];
@@ -79,7 +81,7 @@
     // 使用Masonry进行竖排布局
     [self.button1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.view);
-        make.top.mas_equalTo(self.view.mas_safeAreaLayoutGuideTop).mas_offset(50);
+        make.top.mas_equalTo(self.view.mas_safeAreaLayoutGuideTop).mas_offset(10);
         make.width.mas_equalTo(280);
         make.height.mas_equalTo(50);
     }];
@@ -119,7 +121,7 @@
 #pragma mark - Button Actions
 
 - (void)semaphoreBasicButtonTapped {
-    // 信号量基础示例
+    // 信号量控制并发线程数量
     
     
     

@@ -31,11 +31,17 @@
 		6F1173532EEB264C00B6346C /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F11734F2EEB264C00B6346C /* Common.xcconfig */; };
 		6F1173542EEB264C00B6346C /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F1173502EEB264C00B6346C /* Debug.xcconfig */; };
 		6F1173552EEB264C00B6346C /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F1173512EEB264C00B6346C /* Release.xcconfig */; };
-		6F1173562EEB264C00B6346C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F1173522EEB264C00B6346C /* README.md */; };
 		6F11735A2EEB2B9D00B6346C /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F1173592EEB2B9D00B6346C /* Test.xcconfig */; };
+		6F66FD262EED60F3001B7C9A /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F66FD242EED60F3001B7C9A /* AnimationViewController.m */; };
+		6F66FD2C2EED6123001B7C9A /* munvshen0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F66FD292EED6123001B7C9A /* munvshen0.png */; };
+		6F66FD2D2EED6123001B7C9A /* munvshen.ExportJson in Resources */ = {isa = PBXBuildFile; fileRef = 6F66FD2A2EED6123001B7C9A /* munvshen.ExportJson */; };
+		6F66FD2E2EED6123001B7C9A /* munvshen0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F66FD2B2EED6123001B7C9A /* munvshen0.plist */; };
+		6F66FD312EED6F27001B7C9A /* CAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F66FD302EED6F27001B7C9A /* CAAnimationViewController.m */; };
+		6F66FD372EEF02EC001B7C9A /* ChangeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F66FD362EEF02EC001B7C9A /* ChangeRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8B0A5E6E5908E909119DC2 /* Pods-LockSample.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockSample.test.xcconfig"; path = "Target Support Files/Pods-LockSample/Pods-LockSample.test.xcconfig"; sourceTree = "<group>"; };
 		2E9C1025DF23B6A570F4AF0E /* Pods_LockSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F8A887A71F2B0E27FEB6C3 /* Pods-LockSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockSample.debug.xcconfig"; path = "Target Support Files/Pods-LockSample/Pods-LockSample.debug.xcconfig"; sourceTree = "<group>"; };
 		6F1173082EEA9D3700B6346C /* LockSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,8 +85,17 @@
 		6F11734F2EEB264C00B6346C /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		6F1173502EEB264C00B6346C /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		6F1173512EEB264C00B6346C /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		6F1173522EEB264C00B6346C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6F1173592EEB2B9D00B6346C /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		6F66FD242EED60F3001B7C9A /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		6F66FD252EED60F3001B7C9A /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		6F66FD292EED6123001B7C9A /* munvshen0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = munvshen0.png; sourceTree = "<group>"; };
+		6F66FD2A2EED6123001B7C9A /* munvshen.ExportJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = munvshen.ExportJson; sourceTree = "<group>"; };
+		6F66FD2B2EED6123001B7C9A /* munvshen0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = munvshen0.plist; sourceTree = "<group>"; };
+		6F66FD2F2EED6F27001B7C9A /* CAAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationViewController.h; sourceTree = "<group>"; };
+		6F66FD302EED6F27001B7C9A /* CAAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationViewController.m; sourceTree = "<group>"; };
+		6F66FD332EEEBC5D001B7C9A /* LockSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LockSample-Prefix.pch"; sourceTree = "<group>"; };
+		6F66FD352EEF02EC001B7C9A /* ChangeRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeRootViewController.h; sourceTree = "<group>"; };
+		6F66FD362EEF02EC001B7C9A /* ChangeRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeRootViewController.m; sourceTree = "<group>"; };
 		B3A486904D8FDED9768CB8B7 /* Pods-LockSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockSample.release.xcconfig"; path = "Target Support Files/Pods-LockSample/Pods-LockSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +116,7 @@
 			children = (
 				36F8A887A71F2B0E27FEB6C3 /* Pods-LockSample.debug.xcconfig */,
 				B3A486904D8FDED9768CB8B7 /* Pods-LockSample.release.xcconfig */,
+				1E8B0A5E6E5908E909119DC2 /* Pods-LockSample.test.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -108,6 +124,7 @@
 		6F1172FF2EEA9D3700B6346C = {
 			isa = PBXGroup;
 			children = (
+				6F66FD272EED6116001B7C9A /* Resources */,
 				6F11734E2EEB264C00B6346C /* Config */,
 				6F11730A2EEA9D3700B6346C /* LockSample */,
 				6F1173092EEA9D3700B6346C /* Products */,
@@ -127,11 +144,11 @@
 		6F11730A2EEA9D3700B6346C /* LockSample */ = {
 			isa = PBXGroup;
 			children = (
+				6F66FD342EEF02BC001B7C9A /* Utilities */,
+				6FC8C1C02EED584400490E86 /* Discovery */,
 				6F1173472EEAF24300B6346C /* GCD */,
 				6F11733A2EEADF0700B6346C /* Swift */,
 				6F1173332EEAA47400B6346C /* Home */,
-				6F1173242EEAA27700B6346C /* DiscoveryViewController.h */,
-				6F1173272EEAA27700B6346C /* DiscoveryViewController.m */,
 				6F11732D2EEAA28300B6346C /* MessageViewController.h */,
 				6F11732A2EEAA28300B6346C /* MessageViewController.m */,
 				6F11732C2EEAA28300B6346C /* ProfileViewController.h */,
@@ -148,6 +165,7 @@
 				6F1173172EEA9D3D00B6346C /* Assets.xcassets */,
 				6F1173192EEA9D3D00B6346C /* LaunchScreen.storyboard */,
 				6F11731C2EEA9D3D00B6346C /* Info.plist */,
+				6F66FD332EEEBC5D001B7C9A /* LockSample-Prefix.pch */,
 				6F11731D2EEA9D3D00B6346C /* main.m */,
 			);
 			path = LockSample;
@@ -160,6 +178,8 @@
 				6F1173262EEAA27700B6346C /* HomeViewController.m */,
 				6F1173342EEAA5B500B6346C /* LockSampleViewController.h */,
 				6F1173352EEAA5B500B6346C /* LockSampleViewController.m */,
+				6F1173372EEAB98B00B6346C /* SemaphoreSampleViewController.h */,
+				6F1173382EEAB98B00B6346C /* SemaphoreSampleViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -178,8 +198,6 @@
 		6F1173472EEAF24300B6346C /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				6F1173372EEAB98B00B6346C /* SemaphoreSampleViewController.h */,
-				6F1173382EEAB98B00B6346C /* SemaphoreSampleViewController.m */,
 				6F1173412EEAEA9500B6346C /* ThreadSafeDictionary.h */,
 				6F1173422EEAEA9500B6346C /* ThreadSafeDictionary.m */,
 				6F1173442EEAECB100B6346C /* MaxThreadDowloadManager.h */,
@@ -199,9 +217,48 @@
 				6F1173502EEB264C00B6346C /* Debug.xcconfig */,
 				6F1173592EEB2B9D00B6346C /* Test.xcconfig */,
 				6F1173512EEB264C00B6346C /* Release.xcconfig */,
-				6F1173522EEB264C00B6346C /* README.md */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		6F66FD272EED6116001B7C9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F66FD282EED6123001B7C9A /* munvshen */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F66FD282EED6123001B7C9A /* munvshen */ = {
+			isa = PBXGroup;
+			children = (
+				6F66FD292EED6123001B7C9A /* munvshen0.png */,
+				6F66FD2A2EED6123001B7C9A /* munvshen.ExportJson */,
+				6F66FD2B2EED6123001B7C9A /* munvshen0.plist */,
+			);
+			path = munvshen;
+			sourceTree = "<group>";
+		};
+		6F66FD342EEF02BC001B7C9A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6F66FD352EEF02EC001B7C9A /* ChangeRootViewController.h */,
+				6F66FD362EEF02EC001B7C9A /* ChangeRootViewController.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6FC8C1C02EED584400490E86 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				6F1173242EEAA27700B6346C /* DiscoveryViewController.h */,
+				6F1173272EEAA27700B6346C /* DiscoveryViewController.m */,
+				6F66FD252EED60F3001B7C9A /* AnimationViewController.h */,
+				6F66FD242EED60F3001B7C9A /* AnimationViewController.m */,
+				6F66FD2F2EED6F27001B7C9A /* CAAnimationViewController.h */,
+				6F66FD302EED6F27001B7C9A /* CAAnimationViewController.m */,
+			);
+			path = Discovery;
 			sourceTree = "<group>";
 		};
 		C2A94507FB43780B0337DC43 /* Frameworks */ = {
@@ -275,9 +332,11 @@
 				6F11731B2EEA9D3D00B6346C /* LaunchScreen.storyboard in Resources */,
 				6F1173182EEA9D3D00B6346C /* Assets.xcassets in Resources */,
 				6F1173552EEB264C00B6346C /* Release.xcconfig in Resources */,
-				6F1173562EEB264C00B6346C /* README.md in Resources */,
+				6F66FD2E2EED6123001B7C9A /* munvshen0.plist in Resources */,
 				6F11735A2EEB2B9D00B6346C /* Test.xcconfig in Resources */,
+				6F66FD2C2EED6123001B7C9A /* munvshen0.png in Resources */,
 				6F1173162EEA9D3700B6346C /* Main.storyboard in Resources */,
+				6F66FD2D2EED6123001B7C9A /* munvshen.ExportJson in Resources */,
 				6F1173542EEB264C00B6346C /* Debug.xcconfig in Resources */,
 				6F1173532EEB264C00B6346C /* Common.xcconfig in Resources */,
 			);
@@ -334,6 +393,7 @@
 			files = (
 				6F1173392EEAB98B00B6346C /* SemaphoreSampleViewController.m in Sources */,
 				6F1173132EEA9D3700B6346C /* ViewController.m in Sources */,
+				6F66FD372EEF02EC001B7C9A /* ChangeRootViewController.m in Sources */,
 				6F1173402EEADFDC00B6346C /* SomeOCObject.m in Sources */,
 				6F1173362EEAA5B500B6346C /* LockSampleViewController.m in Sources */,
 				6F1173432EEAEA9500B6346C /* ThreadSafeDictionary.m in Sources */,
@@ -341,8 +401,10 @@
 				6F11732F2EEAA28300B6346C /* ProfileViewController.m in Sources */,
 				6F11731E2EEA9D3D00B6346C /* main.m in Sources */,
 				6F1173462EEAECB100B6346C /* MaxThreadDowloadManager.m in Sources */,
+				6F66FD262EED60F3001B7C9A /* AnimationViewController.m in Sources */,
 				6F11733D2EEADF2000B6346C /* Greeting.swift in Sources */,
 				6F1173292EEAA27800B6346C /* DiscoveryViewController.m in Sources */,
+				6F66FD312EED6F27001B7C9A /* CAAnimationViewController.m in Sources */,
 				6F1173282EEAA27800B6346C /* HomeViewController.m in Sources */,
 				6F11734D2EEAF62C00B6346C /* Buffer.m in Sources */,
 				6F11734A2EEAF2B200B6346C /* TaskScheduler.m in Sources */,
@@ -409,7 +471,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -426,7 +488,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -480,7 +541,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -496,10 +556,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LHK6PK48JE;
+				DEVELOPMENT_TEAM = JS6ZU2DT38;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LockSample/LockSample-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LockSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -511,8 +574,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wjw.LockSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjwdive.LockSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LockSample/Swift/LockSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -529,10 +593,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LHK6PK48JE;
+				DEVELOPMENT_TEAM = JS6ZU2DT38;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LockSample/LockSample-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LockSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -544,8 +611,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wjw.LockSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjwdive.LockSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LockSample/Swift/LockSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -605,7 +673,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -615,16 +682,17 @@
 		};
 		6F1173582EEB2B2B00B6346C /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36F8A887A71F2B0E27FEB6C3 /* Pods-LockSample.debug.xcconfig */;
+			baseConfigurationReference = 1E8B0A5E6E5908E909119DC2 /* Pods-LockSample.test.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LHK6PK48JE;
+				DEVELOPMENT_TEAM = JS6ZU2DT38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LockSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -636,8 +704,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wjw.LockSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjwdive.LockSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LockSample/Swift/LockSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
