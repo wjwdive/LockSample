@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TaskScheduler.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +38,8 @@
     NSLog(@"Bundle ID: %@", bundleID);
     NSLog(@"API基础地址: %@", apiBaseURL);
     NSLog(@"==========================");
+    
+
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -44,7 +47,10 @@
     
     // 打印当前环境信息
     [self printCurrentEnvironment];
-
+    
+    //[[[TaskScheduler alloc] init] executeTasksWithDependencies];
+    [[[TaskScheduler alloc] init] executeTasksWithDependenciesSync];
+    
     return YES;
 }
 
