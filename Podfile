@@ -1,3 +1,4 @@
+source 'git@gitee.com:wjwdive/jj_pod_repo_specs.git'  #gitee 私有源
 source 'https://cdn.cocoapods.org/' # 优先使用CDN源
 platform :ios, '13.0'
 
@@ -8,6 +9,12 @@ def core_pods
   
 end
 
+def private_pods
+  pod 'JJTost', git: 'git@gitee.com:wjwdive/jjtoast.git', tag: '0.1.0'
+  pod 'Analytics', git: 'git@gitee.com:wjwdive/analytics.git', tag: '0.1.0'
+
+end
+
 
 
 target 'LockSample' do
@@ -16,5 +23,6 @@ target 'LockSample' do
   use_frameworks!
 
   core_pods
-
+  private_pods
+  
 end

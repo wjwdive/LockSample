@@ -14,11 +14,15 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Analytics (0.1.0)
+  - JJTost (0.1.0)
   - Masonry (1.1.0)
   - MJRefresh (3.7.9)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
+  - "Analytics (from `git@gitee.com:wjwdive/analytics.git`, tag `0.1.0`)"
+  - "JJTost (from `git@gitee.com:wjwdive/jjtoast.git`, tag `0.1.0`)"
   - Masonry (~> 1.1.0)
   - MJRefresh (= 3.7.9)
 
@@ -28,11 +32,29 @@ SPEC REPOS:
     - Masonry
     - MJRefresh
 
+EXTERNAL SOURCES:
+  Analytics:
+    :git: "git@gitee.com:wjwdive/analytics.git"
+    :tag: 0.1.0
+  JJTost:
+    :git: "git@gitee.com:wjwdive/jjtoast.git"
+    :tag: 0.1.0
+
+CHECKOUT OPTIONS:
+  Analytics:
+    :git: "git@gitee.com:wjwdive/analytics.git"
+    :tag: 0.1.0
+  JJTost:
+    :git: "git@gitee.com:wjwdive/jjtoast.git"
+    :tag: 0.1.0
+
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Analytics: d20f879983205fdc91b08eda45f7e09086507656
+  JJTost: 475d0f156164d7e471634231365525188125d2e6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
 
-PODFILE CHECKSUM: 288a389c10850f26dc898e56336c6355a3cfb948
+PODFILE CHECKSUM: 59a474aba3421310ae06fef1ed5f736218c5fcd0
 
 COCOAPODS: 1.15.2
